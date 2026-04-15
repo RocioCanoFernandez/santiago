@@ -37,7 +37,7 @@ body {
 .hero {
   position: relative;
   background: linear-gradient(135deg, var(--primary-night) 0%, var(--primary-tech) 100%);
-  padding: 2.5rem 1.5rem 5rem 1.5rem;
+  padding: 1.5rem 1.5rem 5rem 1.5rem;
   text-align: center;
   color: var(--white);
   overflow: hidden;
@@ -62,13 +62,13 @@ body {
 }
 
 .logo-container {
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   display: flex;
   justify-content: center;
 }
 
 .logo-container img {
-  height: 100px;
+  height: 115px;
   width: auto;
   object-fit: contain;
 }

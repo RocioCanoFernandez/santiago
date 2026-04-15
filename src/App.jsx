@@ -14,7 +14,7 @@ function App() {
     instagram: "https://www.instagram.com/solucionesconkalmasl?igsh=MTVwNWQ5ZW0wOXR0ZA%3D%3D&utm_source=qr",
     linkedin: "https://www.linkedin.com/in/santiago-ruiz-prieto/",
     facebook: "https://www.facebook.com/share/17Nq3Xv7HM/?mibextid=wwXIfr",
-    logoUrl: "/logo - soluciones con kalma.jpeg",
+    logoUrl: "/logo - soluciones con kalma.png",
     profileImgUrl: "/santiago.jpeg",
     bgOverlayUrl: "/fondo.png",
     seviaiLogoUrl: "/logo_sin_fondo.png"
