@@ -103,6 +103,9 @@ END:VCARD`;
           <p className="services-text">
             Buscamos y gestionamos la mejor solución del mercado para cada caso, con un acompañamiento continuo y totalmente personalizado. Sin coste ni compromiso.
           </p>
+          <p className="services-subtext">
+            Asesoramiento en telefonía y fibra, luz y gas, y sistemas de seguridad y alarmas.
+          </p>
         </div>
 
         {/* Links */}
