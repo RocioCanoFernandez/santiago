@@ -6,7 +6,7 @@ function App() {
   const data = {
     name: "Santiago Ruiz Prieto",
     role: "Asesor experto en telecomunicaciones, energía y seguridad",
-    slogan: "Bienvenido a la Kalma",
+    slogan: "Quiero unirme a la Kalma",
     email: "santiago@solucionesconkalma.es",
     phone: "646441717",
     phoneUrl: "+34646441717",
@@ -76,7 +76,7 @@ END:VCARD`;
       {/* Profile Area */}
       <section className="profile-section">
         <div className="profile-img-container">
-          <img src={data.profileImgUrl} alt={data.name} className="profile-img" onError={(e) => { e.target.src = 'https://ui-avatars.com/api/?name=Santiago+Ruiz&background=12C7CF&color=fff&size=200' }} />
+          <img loading="lazy" src={data.profileImgUrl} alt={data.name} className="profile-img" onError={(e) => { e.target.src = 'https://ui-avatars.com/api/?name=Santiago+Ruiz&background=12C7CF&color=fff&size=200' }} />
         </div>
       </section>
 
@@ -101,18 +101,9 @@ END:VCARD`;
             Nuestros Servicios
           </h3>
           <p className="services-text">
-            Soluciones para hogares y negocios en telecomunicaciones, luz y gas, y seguridad. 
-            Te ayudamos a encontrar la opción más conveniente con asesoramiento cercano y seguimiento personalizado.
-          </p>
-          <p className="services-subtext">
-            Asesoramiento en telefonía y fibra, luz y gas, y sistemas de seguridad y alarmas.
+            Buscamos y gestionamos la mejor solución del mercado para cada caso, con un acompañamiento continuo y totalmente personalizado. Sin coste ni compromiso.
           </p>
         </div>
-
-        {/* Main CTA */}
-        <a href={`https://wa.me/${data.phoneUrl.replace('+', '')}?text=Hola%20${data.name.split(' ')[0]},%20me%20gustar%C3%ADa%20solicitar%20un%20estudio.`} target="_blank" rel="noopener noreferrer" className="main-cta">
-          Solicitar estudio
-        </a>
 
         {/* Links */}
         <h3 className="section-title">Presencia Digital</h3>
@@ -188,7 +179,7 @@ END:VCARD`;
       {/* Floating WhatsApp Button */}
       <div className="floating-actions">
         <a 
-          href={`https://wa.me/${data.phoneUrl.replace('+', '')}?text=Hola%20Santiago,%20vengo%20de%20tu%20tarjeta%20digital.%20Me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n.`}
+          href={`https://wa.me/${data.phoneUrl.replace('+', '')}`}
           target="_blank" 
           rel="noopener noreferrer" 
           className="fab fab-whatsapp"
