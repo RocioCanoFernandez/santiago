@@ -352,6 +352,16 @@ body {
   align-items: center;
   gap: 0.8rem;
   z-index: 50;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px) scale(0.95);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.floating-whatsapp-wrapper.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
 }
 
 @media (max-width: 500px) {
@@ -364,18 +374,8 @@ body {
   display: flex;
   align-items: center;
   gap: 0.25rem;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(10px) scale(0.95);
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transform-origin: right center;
-}
-
-.whatsapp-cta-container.visible {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0) scale(1);
   animation: float-cta 3s ease-in-out infinite 0.5s;
+  transform-origin: right center;
 }
 
 .whatsapp-cta-text {

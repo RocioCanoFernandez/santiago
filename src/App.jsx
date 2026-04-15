@@ -134,7 +134,7 @@ END:VCARD`;
 
         {/* Links */}
         <h3 className="section-title">Presencia Digital</h3>
-        <div className="links-container" ref={linksRef}>
+        <div className="links-container">
           <a href={data.website} target="_blank" rel="noopener noreferrer" className="link-card">
             <div className="link-card-left">
               <div className="link-icon-container">
@@ -155,7 +155,7 @@ END:VCARD`;
             <ChevronRight size={20} className="link-arrow" />
           </a>
 
-          <a href={data.linkedin} target="_blank" rel="noopener noreferrer" className="link-card">
+          <a href={data.linkedin} ref={linksRef} target="_blank" rel="noopener noreferrer" className="link-card">
             <div className="link-card-left">
               <div className="link-icon-container">
                 <Linkedin size={20} />
@@ -204,12 +204,12 @@ END:VCARD`;
       </div>
 
       {/* Floating WhatsApp Area */}
-      <div className="floating-whatsapp-wrapper">
-        <div className={`whatsapp-cta-container ${showCta ? 'visible' : ''}`}>
+      <div className={`floating-whatsapp-wrapper ${showCta ? 'visible' : ''}`}>
+        <div className="whatsapp-cta-container">
           <span className="whatsapp-cta-text">¡Únete a la Kalma!</span>
-          <svg className="whatsapp-cta-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M5 12h13" />
-            <polyline points="12 5 19 12 12 19" />
+          <svg className="whatsapp-cta-arrow" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M5 8 C 10 0, 18 0, 20 12" />
+            <polyline points="14 10 20 12 18 18" />
           </svg>
         </div>
         <a 
