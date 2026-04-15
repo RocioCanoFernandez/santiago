@@ -52,7 +52,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.15;
+  opacity: 0.4;
   mix-blend-mode: overlay;
   pointer-events: none;
 }
@@ -89,11 +89,11 @@ body {
 }
 
 .slogan {
-  font-size: 0.9rem;
-  font-weight: 400;
-  opacity: 0.9;
+  font-size: 1.15rem;
+  font-weight: 500;
+  opacity: 0.95;
   font-style: italic;
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -126,8 +126,9 @@ body {
 /* Contact Badges */
 .contact-badges {
   display: flex;
-  justify-content: center;
-  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
   margin-top: 1.5rem;
   padding: 0 1.5rem;
 }
@@ -135,11 +136,14 @@ body {
 .badge {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: center;
+  gap: 0.75rem;
   background-color: var(--white);
-  padding: 0.6rem 1.25rem;
+  padding: 0.75rem 1.25rem;
   border-radius: 2rem;
-  font-size: 0.85rem;
+  width: 100%;
+  max-width: 280px;
+  font-size: 0.9rem;
   font-weight: 600;
   color: var(--primary-tech);
   text-decoration: none;
@@ -311,31 +315,29 @@ body {
   transform: translateX(4px);
 }
 
-/* VCard Button */
-.vcard-btn {
-  background-color: var(--primary-night);
-  color: var(--white);
-  border: 1px solid var(--accent-cyan);
+/* Floating VCard Button */
+.vcard-btn-floating {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 44px;
+  height: 44px;
+  background-color: var(--white);
+  color: var(--primary-tech);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
-  width: 100%;
-  padding: 1rem;
-  border-radius: 0.75rem;
-  font-weight: 600;
-  text-decoration: none;
-  margin-bottom: 1.5rem;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: none;
+  cursor: pointer;
+  z-index: 50;
   transition: all 0.2s ease;
 }
 
-.vcard-btn:hover {
-  background-color: var(--primary-tech);
-  box-shadow: 0 4px 12px rgba(18, 199, 207, 0.2);
-}
-
-.vcard-btn svg {
-  color: var(--accent-cyan);
+.vcard-btn-floating:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Floating Actions */

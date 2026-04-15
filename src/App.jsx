@@ -43,6 +43,11 @@ END:VCARD`;
 
   return (
     <div className="hub-container">
+      {/* VCard Button at Top Right */}
+      <button onClick={handleDownloadVCard} className="vcard-btn-floating" title="Guardar contacto" aria-label="Guardar contacto">
+        <Download size={22} />
+      </button>
+
       {/* Hero Header */}
       <header className="hero">
         <div 
@@ -78,12 +83,12 @@ END:VCARD`;
       {/* Quick Contact Badges */}
       <div className="contact-badges">
         <a href={`tel:${data.phoneUrl}`} className="badge">
-          <Phone size={16} />
-          <span>Llamar</span>
+          <Phone size={18} />
+          <span>{data.phone}</span>
         </a>
         <a href={`mailto:${data.email}`} className="badge">
-          <Mail size={16} />
-          <span>Email</span>
+          <Mail size={18} />
+          <span>{data.email}</span>
         </a>
       </div>
 
@@ -105,7 +110,7 @@ END:VCARD`;
         </div>
 
         {/* Main CTA */}
-        <a href={`tel:${data.phoneUrl}`} className="main-cta">
+        <a href={`https://wa.me/${data.phoneUrl.replace('+', '')}?text=Hola%20${data.name.split(' ')[0]},%20me%20gustar%C3%ADa%20solicitar%20un%20estudio.`} target="_blank" rel="noopener noreferrer" className="main-cta">
           Solicitar estudio
         </a>
 
@@ -152,12 +157,6 @@ END:VCARD`;
             <ChevronRight size={20} className="link-arrow" />
           </a>
         </div>
-
-        {/* VCard Button */}
-        <button onClick={handleDownloadVCard} className="vcard-btn">
-          <Download size={20} />
-          Guardar contacto
-        </button>
 
       </main>
 
