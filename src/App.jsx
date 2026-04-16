@@ -207,9 +207,9 @@ END:VCARD`;
       <div className={`floating-whatsapp-wrapper ${showCta ? 'visible' : ''}`}>
         <div className="whatsapp-cta-container">
           <span className="whatsapp-cta-text">¡Únete a la Kalma!</span>
-          <svg className="whatsapp-cta-arrow" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M5 8 C 10 0, 18 0, 20 12" />
-            <polyline points="14 10 20 12 18 18" />
+          <svg className="whatsapp-cta-arrow" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M6 4 Q 16 4, 16 14" />
+            <polyline points="11 11 16 16 21 11" />
           </svg>
         </div>
         <a 
