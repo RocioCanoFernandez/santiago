@@ -349,8 +349,9 @@ body {
   bottom: 2rem;
   right: calc(50% - 220px); 
   display: flex;
-  align-items: center;
-  gap: 0.8rem;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.25rem;
   z-index: 50;
   opacity: 0;
   visibility: hidden;
@@ -374,8 +375,9 @@ body {
   display: flex;
   align-items: center;
   gap: 0.25rem;
+  margin-right: 0.5rem;
   animation: float-cta 3s ease-in-out infinite 0.5s;
-  transform-origin: right center;
+  transform-origin: bottom right;
 }
 
 .whatsapp-cta-text {
@@ -394,16 +396,15 @@ body {
 
 .whatsapp-cta-arrow {
   color: var(--accent-cyan);
-  margin-top: 15px;
-  margin-left: -2px;
-  margin-right: -5px;
+  margin-top: 8px;
+  transform: rotate(5deg);
   filter: drop-shadow(0 2px 2px rgba(18, 199, 207, 0.2));
 }
 
 @keyframes float-cta {
-  0% { transform: translateY(-25px) rotate(0deg); }
-  50% { transform: translateY(-29px) rotate(2deg); }
-  100% { transform: translateY(-25px) rotate(0deg); }
+  0% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-4px) rotate(2deg); }
+  100% { transform: translateY(0) rotate(0deg); }
 }
 
 .fab {
