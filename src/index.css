@@ -394,14 +394,16 @@ body {
 
 .whatsapp-cta-arrow {
   color: var(--accent-cyan);
-  transform: rotate(15deg);
-  margin-top: 5px;
+  margin-top: 15px;
+  margin-left: -2px;
+  margin-right: -5px;
+  filter: drop-shadow(0 2px 2px rgba(18, 199, 207, 0.2));
 }
 
 @keyframes float-cta {
-  0% { transform: translateY(0) rotate(0deg); }
-  50% { transform: translateY(-4px) rotate(2deg); }
-  100% { transform: translateY(0) rotate(0deg); }
+  0% { transform: translateY(-25px) rotate(0deg); }
+  50% { transform: translateY(-29px) rotate(2deg); }
+  100% { transform: translateY(-25px) rotate(0deg); }
 }
 
 .fab {
