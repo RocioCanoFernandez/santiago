@@ -35,6 +35,7 @@ function App() {
     phone: "646441717",
     phoneUrl: "+34646441717",
     website: "https://solucionesconkalma.es/",
+    hubUrl: "https://hub-hub-santiago.npfusf.easypanel.host/",
     instagram: "https://www.instagram.com/solucionesconkalmasl?igsh=MTVwNWQ5ZW0wOXR0ZA%3D%3D&utm_source=qr",
     linkedin: "https://www.linkedin.com/in/santiago-ruiz-prieto/",
     facebook: "https://www.facebook.com/share/17Nq3Xv7HM/?mibextid=wwXIfr",
@@ -52,6 +53,7 @@ TITLE:${data.role}
 TEL;TYPE=WORK,VOICE:${data.phoneUrl}
 EMAIL;TYPE=PREF,INTERNET:${data.email}
 URL:${data.website}
+URL:${data.hubUrl}
 END:VCARD`;
 
   const handleDownloadVCard = () => {
